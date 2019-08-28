@@ -1,0 +1,10 @@
+#!/bin/bash
+#usseful scripts to use as commands for common tasks
+#190302
+#dorian cuentas
+
+__dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source ${__dir}/doit.sh
+
+echo executing : $1 ${*:2}
+$1 ${*:2}
